@@ -1,40 +1,56 @@
-<div class="row">
-  <div class="col-md-6">
-    <h5>Day 1</h5>
-    <table class="table table-striped">
-      <tr> <td>Before</td> <td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener noreferrer">Pre-workshop survey</a> </td> </tr>
-      <tr> <td>09:00</td>  <td>Automating Tasks with the Unix Shell</td> </tr>
-      <tr> <td>10:30</td>  <td>Morning break</td> </tr>
-      <tr> <td>11:00</td>  <td>Automating Tasks with the Unix Shell (Continued)</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      {% if site.flavor == "r" %}
-      <tr> <td>13:00</td>  <td>Building Programs with R</td> </tr>
-      <tr> <td>14:30</td>  <td>Afternoon break</td> </tr>
-      <tr> <td>15:00</td>  <td>Building Programs with R (Continued)</td> </tr>
-      {% elsif site.flavor == "python" %}
-      <tr> <td>13:00</td>  <td>Building Programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Afternoon break</td> </tr>
-      <tr> <td>15:00</td>  <td>Building Programs with Python (Continued)</td> </tr>
-      {% else %}
-      {% include warning-flavor.html %}
-      {% endif %}
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
-      <tr> <td>16:30</td>  <td>END</td> </tr>
-    </table>
-  </div>
-  <div class="col-md-6">
-    <h5>Day 2</h5>
-    <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version Control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Morning break</td> </tr>
-      <tr> <td>11:00</td>  <td>Version Control with Git (Continued)</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing Data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Afternoon break</td> </tr>
-      <tr> <td>15:00</td>  <td>Managing Data with SQL (Continued)</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
-      <tr> <td>16:30</td>  <td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener noreferrer">Post-workshop Survey</a></td> </tr>
-      <tr> <td>16:40</td>  <td>END</td> </tr>
-    </table>
-  </div>
+<div class="header">-</div><div class="row">
+<div class="col-md-6">
+<h3>Day 1</h3>
+<table class="table table-striped">
+<tr><th>Start</th><th>Duration (minutes)</th><th>End</th><th>Episode</th></tr>
+<tr>
+	<td>09:00</td><td>10</td><td>09:10</td><td><a href="null">Introduction</a></td>
+</tr>
+<tr>
+	<td>09:10</td><td>35</td><td>09:45</td><td><a href="https://newcastlerse-training.github.io/hpc-intro-comet/10-hpc-intro.html">Why use a Cluster?</a></td>
+</tr>
+<tr>
+	<td>09:45</td><td>15</td><td>10:00</td><td><a href="https://newcastlerse-training.github.io/hpc-intro-comet/11-connecting.html">Connecting to a remote HPC system</a></td>
+</tr>
+<tr>
+	<td>10:00</td><td>45</td><td>10:45</td><td><a href="https://newcastlerse-training.github.io/hpc-intro-comet/12-cluster.html">Working on an HPC System</a></td>
+</tr>
+<tr>
+	<td>10:45</td><td>15</td><td>11:00</td><td><a href="-">BREAK</a></td>
+</tr>
+<tr>
+	<td>11:00</td><td>45</td><td>11:45</td><td><a href="https://newcastlerse-training.github.io/hpc-intro-comet/13-scheduler.html">Scheduler Fundamentals</a></td>
+</tr>
+<tr>
+	<td>11:45</td><td>45</td><td>12:30</td><td><a href="https://newcastlerse-training.github.io/hpc-intro-comet/15-modules.html">Accessing Software vi Modules</a></td>
+</tr>
+<tr>
+	<td>12:30</td><td>60</td><td>13:30</td><td><a href="-">LUNCH</a></td>
+</tr>
+<tr>
+	<td>13:30</td><td>45</td><td>14:15</td><td><a href="https://newcastlerse-training.github.io/hpc-intro-comet/16-transferring-files.html">Transferring Files</a></td>
+</tr>
+<tr>
+	<td>14:15</td><td>15</td><td>14:30</td><td><a href="https://newcastlerse-training.github.io/hpc-intro-comet/20-rdw.html">Using RDW</a></td>
+</tr>
+<tr>
+	<td>14:30</td><td>30</td><td>15:00</td><td><a href="https://newcastlerse-training.github.io/hpc-intro-comet/17-parallel.html">Running a Parallel Job</a></td>
+</tr>
+<tr>
+	<td>15:00</td><td>15</td><td>15:15</td><td><a href="-">BREAK</a></td>
+</tr>
+<tr>
+	<td>15:15</td><td>45</td><td>16:00</td><td><a href="https://newcastlerse-training.github.io/hpc-intro-comet/18-resources.html">Using Resources Effectively</a></td>
+</tr>
+<tr>
+	<td>16:00</td><td>45</td><td>16:45</td><td><a href="https://newcastlerse-training.github.io/hpc-intro-comet/19-responsibility.html">Using Shared Resources Responsibly</a></td>
+</tr>
+<tr>
+	<td>16:45</td><td>0</td><td>16:45</td><td><a href="-">Post -workshop Survey</a></td>
+</tr>
+<tr>
+	<td>16:45</td><td>0</td><td>16:45</td><td><a href="-">Finish</a></td>
+</tr>
+</table>
+</div>
 </div>
